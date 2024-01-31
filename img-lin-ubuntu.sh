@@ -69,6 +69,6 @@ sudo oscap xccdf generate fix --fix-type ansible --fetch-remote-resources --outp
 sudo ansible-playbook -i "localhost," ~/Ubuntu2204-CIS-L2-Hardening-Playbook.yml --connection=local;
 sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db;
 sudo echo "5 8 * * 0 /usr/bin/aide --check --config /etc/aide/aide.conf" | sudo crontab -;
-zee_auditctl_function;
+auditctl_function;
 sudo rm -rf ~/*.html ~/*.xml ~/*.yml;
 sudo rm -rf ~/scap-security-guide-0.1.71*;
